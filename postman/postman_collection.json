@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "3685284e-4917-4cbe-8fe1-fb87a0c862ef",
+		"name": "Velsis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43469109",
+		"_collection_link": "https://gabriel-8484893.postman.co/workspace/91d08124-ff3e-48f7-8a7d-b79f36a3821c/collection/43469109-3685284e-4917-4cbe-8fe1-fb87a0c862ef?action=share&source=collection_link&creator=43469109"
+	},
+	"item": [
+		{
+			"name": "API Endpoints",
+			"item": [
+				{
+					"name": "Usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Joana Silva\",\r\n  \"birth_date\": \"1990-05-18\",\r\n  \"address_number\": 126,\r\n  \"document\": \"12345678901\",\r\n  \"zip\": \"01001000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}",
+							"host": [
+								"{{baseUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Usuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}",
+							"host": [
+								"{{baseUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario For Update",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/{id}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Name Usuario",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"name\": \"João da Silva Santos\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/name",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"name"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Birth Date Usuario",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"birth_date\": \"1985-12-25\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/birthDate",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"birthDate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Address Usuario",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"zip\": \"22030010\",\r\n  \"address_number\": 456\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/address",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"address"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Document Usuario",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"document\": \"98765432100\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/document",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"document"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 1,\r\n  \"name\": \"Maria Oliveira\",\r\n  \"birth_date\": \"1988-03-20\",\r\n  \"address_number\": 789,\r\n  \"document\": \"11122233344\",\r\n  \"zip\": \"22040020\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}",
+							"host": [
+								"{{baseUrl}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/{id}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"{id}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
